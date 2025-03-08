@@ -9,7 +9,7 @@ CC		= g++ -std=c++17 -Wall -Wextra -g -O3
 NOLINKFLAG 	= -c
 OUTPUTFLAG 	= -o
 
-CLOCAL          = -I../src_basic -I../src_number -I../src_matrix -I../src_comb -I../src_graph -I../src_group -I../src_poly -I../src_dualdesc -I../permutalib/src -I.
+CLOCAL          = -I../polyhedral_common/src_basic -I../polyhedral_common/src_number -I../polyhedral_common/src_matrix -I../polyhedral_common/src_comb -I../polyhedral_common/src_graph -I../polyhedral_common/src_group -I../polyhedral_common/src_poly -I../polyhedral_common/src_dualdesc -I../permutalib/src -I.
 #CFLAGS 		= -I$(GMP_INCDIR) -I$(LIBBLISS_INCDIR) -I$(BOOST_INCDIR) -I$(EIGEN_PATH) $(NAUTY_INCLUDE) $(GLPK_INCLUDE) $(CDDLIB_INCLUDE) $(MPREAL_INCLUDE)
 CFLAGS 		= -I$(GMP_INCDIR) -I$(BOOST_INCDIR) -I$(EIGEN_PATH) $(NAUTY_INCLUDE)
 CHASHMAP        = -I../basic_common_cpp/sparse-map/include/tsl/ -I../basic_common_cpp/robin-map/include/tsl/ -I../basic_common_cpp/hopscotch-map/include/tsl/
