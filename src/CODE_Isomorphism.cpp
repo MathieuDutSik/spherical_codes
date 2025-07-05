@@ -42,7 +42,6 @@ template <typename T, typename Tgroup>
 void process_entry_type(std::string const &FileGram,
                         std::string const &FileCode1,
                         std::string const &FileCode2) {
-  using TintGroup = typename Tgroup::Tint;
   using Telt = typename Tgroup::Telt;
   using Tidx = typename Telt::Tidx;
   MyMatrix<T> preCODE1 = ReadMatrixFile<T>(FileCode1);
